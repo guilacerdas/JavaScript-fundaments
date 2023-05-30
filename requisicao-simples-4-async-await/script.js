@@ -1,15 +1,8 @@
 
-function clicou() {
-   fetch('https://private-anon-2046deaec1-pizzaapp.apiary-mock.com/restaurants/2/menu')
-      .then(function (menu) {
-         return menu.json();
-      })
-      .then(function (json) {
-         buildData(json)
-      })
-      .catch(function (error) {
-         console.log('Deuruim');
-      });
+async function clicou() {
+   let req = await fetch('https://private-anon-2046deaec1-pizzaapp.apiary-mock.com/restaurants/2/menu');
+   let menu = await req.json();
+   buildData(menu)
 }
 
 function buildData(list) {
