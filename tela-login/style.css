@@ -1,0 +1,35 @@
+
+body {
+    margin: 0%;
+    width: fit-content;
+    height: fit-content;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#imgfolhas {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #5F7C8D;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    color: #5F7C8D;
+}
+
+.logindiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}

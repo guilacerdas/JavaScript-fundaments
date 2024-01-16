@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Manipulando classes</title>
+  </head>
+  <body>
+    <section>
+      <div>
+        <img
+          src="https://conasems-ava-prod.s3.sa-east-1.amazonaws.com/portal/homebanners/blue-white-leafy-background-vector-53876-136080-1-1705405212.png"
+          alt="fondo de tela de folhas"
+          id="imgfolhas"
+        />
+      </div>
+      <div class="logindiv">
+        <h1>Olá,</h1>
+        <h2>você!</h2>
+      </div>
+      <div class="logindiv">
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'login')">
+            Login
+          </button>
+          <button class="tablinks" onclick="openTaby(event, 'signup')">
+            SignUp
+          </button>
+        </div>
+        <div id="login" class="tabcontent">
+          <form action="submit">
+            <input type="text" placeholder="Enter your e-mail" />
+            <input type="password" placeholder="Enter your password" />
+            <button type="submit" onclick="login()">Login</button>
+          </form>
+        </div>
+
+        <div id="signup" class="tabcontent">
+          <form action="submit">
+            <input type="text" placeholder="Register your e-mail" />
+            <input type="password" placeholder="Register your password" />
+            <button type="submit" onclick="register()">Register</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
